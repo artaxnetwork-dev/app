@@ -28,9 +28,9 @@ export async function POST(request: NextRequest) {
       }
     }
     
-    // Echo back the data with additional metadata
+    // Echo back the chat data with additional metadata
     const response = {
-      message: "Echo endpoint - returning your data",
+      message: "Chat endpoint - returning your data",
       timestamp,
       request: {
         method,
@@ -62,16 +62,21 @@ export async function POST(request: NextRequest) {
 // Optional: Add a GET method to show endpoint information
 export async function GET() {
   return NextResponse.json({
-    message: "Echo API Endpoint",
-    description: "Send a POST request with JSON data to echo it back",
-    usage: "POST /api/echo",
+    message: "Chat API Endpoint",
+    description: "Send a POST request with chat data to echo it back",
+    usage: "POST /api/chat",
+    expectedFormat: {
+      sessionId: "string (UUID format)",
+      action: "string (e.g., 'sendMessage')",
+      chatInput: "string (user message)"
+    },
     example: {
       method: "POST",
-      url: "/api/echo",
+      url: "/api/chat",
       body: {
-        "name": "John Doe",
-        "email": "john@example.com",
-        "message": "Hello World"
+        "sessionId": "fe5d6ca5dd9a435d9ee56ffdf75f09dd",
+        "action": "sendMessage",
+        "chatInput": "hey"
       }
     }
   });
