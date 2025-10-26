@@ -33,6 +33,8 @@ export default function LoginPage() {
       }
 
       if (data.user) {
+        // Reset loading state before redirect
+        setLoading(false)
         // Redirect to dashboard on successful login
         router.push('/dashboard')
       }
