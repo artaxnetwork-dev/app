@@ -1,18 +1,36 @@
-import { defineConfig, globalIgnores } from "eslint/config";
-import nextVitals from "eslint-config-next/core-web-vitals";
-import nextTs from "eslint-config-next/typescript";
-
-const eslintConfig = defineConfig([
-  ...nextVitals,
-  ...nextTs,
-  // Override default ignores of eslint-config-next.
-  globalIgnores([
-    // Default ignores of eslint-config-next:
+const eslintConfig = [
+  {
+    ignores: [
     ".next/**",
     "out/**",
     "build/**",
+      "dist/**",
     "next-env.d.ts",
-  ]),
-]);
+      "node_modules/**",
+      ".vercel/**",
+      "*.config.js",
+      "*.config.mjs"
+    ]
+  },
+  {
+    files: ["**/*.{js,jsx,ts,tsx}"],
+    languageOptions: {
+      ecmaVersion: "latest",
+      sourceType: "module",
+      parserOptions: {
+        ecmaFeatures: {
+          jsx: true
+        }
+      }
+    },
+    rules: {
+      // Basic rules for Next.js projects
+      "no-unused-vars": "warn",
+      "no-console": "warn",
+      "prefer-const": "warn",
+      "no-var": "error"
+    }
+  }
+];
 
 export default eslintConfig;

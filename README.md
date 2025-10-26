@@ -1,31 +1,64 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Artax Network
 
-## Getting Started
+A Next.js application with Supabase integration, optimized for Vercel deployment.
 
-First, run the development server:
+## 🚀 Quick Start
 
 ```bash
-# or
-bun dev
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) to view the application.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🛠️ Development
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Available Scripts
 
-## Learn More
+```bash
+npm run dev          # Start development server
+npm run build        # Build for production
+npm run start        # Start production server
+npm run lint         # Run ESLint
+```
 
-To learn more about Next.js, take a look at the following resources:
+### Tech Stack
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Framework**: Next.js 16.0.0
+- **Runtime**: Node.js 18
+- **Language**: TypeScript
+- **Database**: Supabase
+- **Deployment**: Vercel
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📦 Dependencies
 
-## Deploy on Vercel
+### Production Dependencies
+- `next`: 16.0.0
+- `react`: 19.2.0
+- `react-dom`: 19.2.0
+- `@supabase/supabase-js`: ^2.76.1
+- `@vercel/speed-insights`: ^1.2.0
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Development Dependencies
+- `typescript`: ^5
+- `@types/node`: ^20
+- `@types/react`: ^19
+- `@types/react-dom`: ^19
+- `eslint`: ^9
+- `tailwindcss`: ^4
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🚀 Deployment
+
+### Vercel Deployment
+1. Push to connected Git repository
+2. Vercel automatically builds and deploys
+3. Or use `vercel deploy` for manual deployment
+
+## 📚 Resources
+
+- [Next.js Documentation](https://nextjs.org/docs)
+- [Supabase Documentation](https://supabase.com/docs)
+- [Vercel Documentation](https://vercel.com/docs)
