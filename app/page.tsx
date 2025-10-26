@@ -12,15 +12,15 @@ export default function LandingPage() {
         <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
           <h1 className="text-2xl font-light tracking-tight">Artax Network</h1>
           <div className="flex items-center space-x-6">
-            <Link href="/about" className="text-zinc-400 hover:text-white transition-colors">
+            <a href="#features" className="text-zinc-400 hover:text-white transition-colors">
               About
-            </Link>
-            <Link href="/features" className="text-zinc-400 hover:text-white transition-colors">
+            </a>
+            <a href="#features" className="text-zinc-400 hover:text-white transition-colors">
               Features
-            </Link>
-            <Link href="/pricing" className="text-zinc-400 hover:text-white transition-colors">
+            </a>
+            <a href="#features" className="text-zinc-400 hover:text-white transition-colors">
               Pricing
-            </Link>
+            </a>
             <Link href="/login">
               <Button variant="outline" className="border-zinc-700 text-white hover:bg-zinc-900">
                 Sign In
@@ -57,7 +57,7 @@ export default function LandingPage() {
       </section>
 
       {/* Features Section */}
-      <section className="max-w-7xl mx-auto px-6 py-24">
+      <section id="features" className="max-w-7xl mx-auto px-6 py-24">
         <div className="grid md:grid-cols-3 gap-8">
           <div className="p-8 rounded-2xl bg-zinc-900 border border-purple-500/20 hover:border-purple-500/40 transition-colors">
             <div className="w-12 h-12 rounded-xl bg-purple-500/20 flex items-center justify-center mb-6">
@@ -133,11 +133,11 @@ export default function LandingPage() {
                 <ArrowRight className="ml-2 w-5 h-5" />
               </Button>
             </Link>
-            <Link href="/features">
+            <a href="#features">
               <Button size="lg" variant="outline" className="border-zinc-700 text-white hover:bg-zinc-900 px-12">
                 Learn More
               </Button>
-            </Link>
+            </a>
           </div>
         </div>
       </section>
@@ -155,25 +155,25 @@ export default function LandingPage() {
             <div>
               <h4 className="font-medium mb-4">Product</h4>
               <ul className="space-y-2 text-sm text-zinc-400">
-                <li><Link href="/features" className="hover:text-white transition-colors">Features</Link></li>
-                <li><Link href="/pricing" className="hover:text-white transition-colors">Pricing</Link></li>
-                <li><Link href="/docs" className="hover:text-white transition-colors">Documentation</Link></li>
+                <li><a href="#features" className="hover:text-white transition-colors">Features</a></li>
+                <li><a href="#features" className="hover:text-white transition-colors">Pricing</a></li>
+                <li><a href="/login" className="hover:text-white transition-colors">Get Started</a></li>
               </ul>
             </div>
             <div>
               <h4 className="font-medium mb-4">Company</h4>
               <ul className="space-y-2 text-sm text-zinc-400">
-                <li><Link href="/about" className="hover:text-white transition-colors">About</Link></li>
-                <li><Link href="/blog" className="hover:text-white transition-colors">Blog</Link></li>
-                <li><Link href="/careers" className="hover:text-white transition-colors">Careers</Link></li>
+                <li><a href="#features" className="hover:text-white transition-colors">About</a></li>
+                <li><Link href="/login" className="hover:text-white transition-colors">Login</Link></li>
+                <li><Link href="/register" className="hover:text-white transition-colors">Register</Link></li>
               </ul>
             </div>
             <div>
               <h4 className="font-medium mb-4">Support</h4>
               <ul className="space-y-2 text-sm text-zinc-400">
-                <li><Link href="/help" className="hover:text-white transition-colors">Help Center</Link></li>
-                <li><Link href="/contact" className="hover:text-white transition-colors">Contact</Link></li>
-                <li><Link href="/status" className="hover:text-white transition-colors">Status</Link></li>
+                <li><a href="/login" className="hover:text-white transition-colors">Contact Support</a></li>
+                <li><Link href="/login" className="hover:text-white transition-colors">Login</Link></li>
+                <li><a href="#features" className="hover:text-white transition-colors">Features</a></li>
               </ul>
             </div>
           </div>
